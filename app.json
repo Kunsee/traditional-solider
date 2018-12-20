@@ -1,0 +1,46 @@
+{
+    "distServer": {
+        "root": "dist",
+        "livereload": true,
+        "port": 2556
+    },
+    "devServer": {
+        "root": "src",
+        "livereload": false,
+        "port": 2554
+    },
+    "sass": {
+        "outputStyle": "compressed"
+    },
+    "babel": {
+        "presets": [
+            "env"
+        ]
+    },
+    "autoprefixer": {
+        "browsers": [
+            "last 2 versions"
+        ],
+        "cascade": false
+    },
+    "cleanCss": {
+        "compatibility": "ie8"
+    },
+    "htmlmin": {
+        "removeComments": true,
+        "collapseWhitespace": false,
+        "collapseBooleanAttributes": false,
+        "removeEmptyAttributes": false,
+        "removeScriptTypeAttributes": true,
+        "removeStyleLinkTypeAttributes": true,
+        "minifyJS": true,
+        "minifyCSS": true
+    },
+    "imagemin": {
+        "optimizationLevel": 5,
+        "progressive": true,
+        "interlaced": true,
+        "multipass": true
+    },
+    "license": "ISC"
+}
