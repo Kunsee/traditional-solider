@@ -365,20 +365,7 @@ function addFile(file){
     gulp.src(file, {base : './' + sourcePath}) //指定这个文件
         .pipe(gulp.dest(sourceBuild))
         .pipe(reload({stream: true}))
-        //gulp.src(file, {base: './' + sourcePath+ '/pages'})
-        //.pipe(gulp.dest(sourceBuild+'/pages'))
-    
-
 }
-// 监测新增
-// function changeFile(file){
-//     console.info(file,"changed");
-//     gulp.src(file, {base : './'+sourcePath}) //指定这个文件
-//         .pipe(gulp.dest('./'+sourceBuild))
-//         .pipe(reload({stream: true}))
-
-// }
-
 
 // 编译任务以后,缺省任务的服务才能跑起来
 gulp.task('build', sequence('clean-dist','move','move-file',['html'],['images','scss'],['css-minify'],['js-minify']  ) );
